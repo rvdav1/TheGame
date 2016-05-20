@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PlayController">
+   <children>
+      <GridPane fx:id="gridPane" gridLinesVisible="true" prefHeight="480.0" prefWidth="480.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children></AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.rowIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.rowIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.rowIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.rowIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.rowIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.rowIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="1" GridPane.rowIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="1" GridPane.rowIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="2" GridPane.rowIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="2" GridPane.rowIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="3" GridPane.rowIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="3" GridPane.rowIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="3" GridPane.rowIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="3" GridPane.rowIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="3" GridPane.rowIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="4" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="4" GridPane.rowIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="4" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="4" GridPane.rowIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="4" GridPane.rowIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="4" GridPane.rowIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="4" GridPane.rowIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="4" GridPane.rowIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="5" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="5" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="5" GridPane.rowIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="5" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="5" GridPane.rowIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="5" GridPane.rowIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="5" GridPane.rowIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="5" GridPane.rowIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="5" GridPane.rowIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="6" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="6" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="6" GridPane.rowIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="6" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="6" GridPane.rowIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="6" GridPane.rowIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="6" GridPane.rowIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="6" GridPane.rowIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="6" GridPane.rowIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="7" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="7" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="7" GridPane.rowIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="7" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="7" GridPane.rowIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="7" GridPane.rowIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="7" GridPane.rowIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="7" GridPane.rowIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="7" GridPane.rowIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="8" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="8" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="8" GridPane.rowIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="8" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="8" GridPane.rowIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="8" GridPane.rowIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="8" GridPane.rowIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="8" GridPane.rowIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="8" GridPane.rowIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="9" GridPane.rowIndex="1">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="9" GridPane.rowIndex="2">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="9" GridPane.rowIndex="3">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="9" GridPane.rowIndex="4">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="9" GridPane.rowIndex="5">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="9" GridPane.rowIndex="6">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="9" GridPane.rowIndex="7">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="9" GridPane.rowIndex="8">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: lightgreen;" GridPane.columnIndex="9" GridPane.rowIndex="9">
+               <children>
+                  <Button layoutY="20.0" mnemonicParsing="false" onAction="#handleBoardButton" opacity="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </GridPane>
+      <Label alignment="CENTER" prefHeight="50.0" text="First Team" textAlignment="CENTER" textFill="RED" underline="true" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamLabel1" layoutX="490.0" layoutY="10.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamCord1" layoutX="500.0" layoutY="20.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamLabel2" layoutX="500.0" layoutY="20.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamCord2" layoutX="510.0" layoutY="30.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="125.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamLabel3" layoutX="510.0" layoutY="30.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamCord3" layoutX="520.0" layoutY="40.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamLabel4" layoutX="510.0" layoutY="30.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamCord4" layoutX="530.0" layoutY="50.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="225.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamLabel5" layoutX="510.0" layoutY="30.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="250.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamCord5" layoutX="540.0" layoutY="60.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="275.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamLabel6" layoutX="520.0" layoutY="40.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="firstTeamCord6" layoutX="550.0" layoutY="70.0" prefHeight="25.0" textAlignment="CENTER" textFill="RED" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="325.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      
+          <Label alignment="CENTER" prefHeight="50.0" text="Second Team" textAlignment="CENTER" textFill="BLUE" underline="true" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="350.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamLabel1" layoutX="490.0" layoutY="10.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="400.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamCord1" layoutX="500.0" layoutY="20.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="425.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamLabel2" layoutX="500.0" layoutY="20.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="450.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamCord2" layoutX="510.0" layoutY="30.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="475.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamLabel3" layoutX="510.0" layoutY="30.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="500.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamCord3" layoutX="520.0" layoutY="40.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="525.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamLabel4" layoutX="510.0" layoutY="30.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="550.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamCord4" layoutX="530.0" layoutY="50.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="575.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamLabel5" layoutX="510.0" layoutY="30.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="600.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamCord5" layoutX="540.0" layoutY="60.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="625.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamLabel6" layoutX="520.0" layoutY="40.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="650.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="secondTeamCord6" layoutX="550.0" layoutY="70.0" prefHeight="25.0" textAlignment="CENTER" textFill="BLUE" AnchorPane.leftAnchor="500.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="675.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="whoseTurnLabel" alignment="CENTER" prefWidth="480.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="480.0">
+         <font>
+            <Font size="64.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
+
+
