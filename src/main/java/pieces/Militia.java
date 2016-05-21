@@ -1,8 +1,17 @@
 package pieces;
 import engine.*;
 
+/**
+ * A Militia egység osztálya.
+ */
 public class Militia extends CombatUnit{
 
+	/**
+	 * A Militia egység konstruktora.
+	 * 
+	 * @param team az egység csapata
+	 * @param unitZone az egység jelenlegi zónája
+	 */
 	public Militia(boolean team, GameZone unitZone) {
 		super(team, unitZone);
 		this.setHealth(130);

@@ -16,7 +16,17 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
 
+/**
+ * XML beolvasására szolgáló osztály.
+ */
 public class ReadInXML {
+	
+	/**
+	 * XML fájlban szereplő egységekent String listaként visszatéríti.
+	 * 
+	 * @param xmlFile bemeneti fájl
+	 * @return output egységek az XML fájlból
+	 */
 	public static List<String> readXML(File xmlFile){
 		List<String> output = new ArrayList<String>();
 		try {
@@ -62,6 +72,12 @@ public class ReadInXML {
 		return output;
 	}
 	
+	/**
+	 * JAR-ban lévő XML fájlban szereplő egységekent String listaként visszatéríti.
+	 * 
+	 * @param xmlFile JAR-ból kinyert xml dokumentum
+	 * @return output egységek az XML fájlból
+	 */
 	public static List<String> readXML(InputStream xmlFile){
 		List<String> output = new ArrayList<String>();
 		try {

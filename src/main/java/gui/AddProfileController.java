@@ -22,7 +22,8 @@ import javafx.stage.Stage;
 import javafx.stage.Window;
 import persistence.WriteInXML;
 
-public class AddProfileController implements Initializable {	
+public class AddProfileController implements Initializable {
+
 	ObservableList<String> units = FXCollections.observableArrayList(
 			"Cavalry",
 			"Guard",
@@ -35,43 +36,43 @@ public class AddProfileController implements Initializable {
 			"Spearman",
 			"Swordsmen"
 	);
-	
+
 	List<String> chosen = new ArrayList<String>();
-	
+
 	public static boolean isAlphabet(String word) {
 	    return word.matches("[a-zA-Z]+");
 	}
-	
+
 	@FXML
 	Button addProfileButton;
-	
+
 	@FXML
 	Button backAdd;
-	
+
 	@FXML
 	TextField textFieldAdd;
-	
+
 	@FXML
 	Label labelAdd;
-	
+
 	@FXML
 	ComboBox<String> firstBoxAdd;
 	
 	@FXML
 	ComboBox<String> secondBoxAdd;
-	
+
 	@FXML
 	ComboBox<String> thirdBoxAdd;
-	
+
 	@FXML
 	ComboBox<String> fourthBoxAdd;
-	
+
 	@FXML
 	ComboBox<String> fifthBoxAdd;
-	
+
 	@FXML
 	ComboBox<String> sixthBoxAdd;
-	
+
 	@FXML
 	void handleAddProfile(ActionEvent event) throws IOException {
 		String text = textFieldAdd.getText();

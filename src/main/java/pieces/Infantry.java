@@ -1,8 +1,17 @@
 package pieces;
 import engine.*;
 
+/**
+ * A Infantry egység osztálya.
+ */
 public class Infantry extends CombatUnit{
-
+	
+	/**
+	 * A Infantry egység konstruktora.
+	 * 
+	 * @param team az egység csapata
+	 * @param unitZone az egység jelenlegi zónája
+	 */
 	public Infantry(boolean team, GameZone unitZone) {
 		super(team, unitZone);
 		this.setHealth(120);

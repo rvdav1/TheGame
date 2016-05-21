@@ -22,7 +22,13 @@ import org.w3c.dom.Element;
 
 import gui.Main;
 
-public class WriteInXML {	
+/**
+ * XML írásáért felelős osztály.
+ */
+public class WriteInXML {
+	/**
+	 * Létrehozza a szükséges mappaszerkezetet a futáshoz,ha nincs még kész.
+	 */
 	public static void setDep(){
 		List<String> depList = Arrays.asList("","Peasant","Peasant","Peasant","Peasant","Peasant","Peasant");
 		new File(WriteInXML.getFolder()).mkdirs();
@@ -31,6 +37,11 @@ public class WriteInXML {
 			WriteInXML.writeXML(depList);
 	}
 	
+	/**
+	 * A futtatott állomány elérési újtát adja vissza.
+	 * 
+	 * @return temp a futtatott állomány elérési útja
+	 */
 	public static String getRunLoc(){
 		String temp;
 		String jarName = Main.getName();
@@ -40,6 +51,11 @@ public class WriteInXML {
 		return temp;
 	}
 	
+	/**
+	 * Az output adatok elérési útvonalát adja vissza .
+	 * 
+	 * @return folder output adatok elérézi útvonala
+	 */
 	public static String getFolder(){
 		String result;
 		String folder;
@@ -58,6 +74,12 @@ public class WriteInXML {
 		return folder;
 	}
 	
+	/**
+	 * Megvizsgálja,hogy létezik e az az állomány,amivel dolgozni szeretnénk.
+	 * 
+	 * @param fileName az állomány neve
+	 * @return boolean létezik e az adott állomány
+	 */
 	public static boolean checkDir(String fileName){
 		String loc;
 		loc = WriteInXML.getFolder() + fileName + ".xml";
@@ -69,6 +91,11 @@ public class WriteInXML {
 			return false;
 	}
 	
+	/**
+	 * XML írása az adott adatokkal.
+	 * 
+	 * @param names a fájl neve,illetve a fájlba írandó egységek
+	 */
 	public static void writeXML(List<String> names){
 		String s,loc;
 		loc = WriteInXML.getFolder() + names.get(0) + ".xml";

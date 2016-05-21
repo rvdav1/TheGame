@@ -1,8 +1,17 @@
 package pieces;
 import engine.*;
 
+/**
+ * A Paladin egység osztálya.
+ */
 public class Paladin extends CombatUnit{
 
+	/**
+	 * A Paladin egység konstruktora.
+	 * 
+	 * @param team az egység csapata
+	 * @param unitZone az egység jelenlegi zónája
+	 */
 	public Paladin(boolean team, GameZone unitZone) {
 		super(team, unitZone);
 		this.setHealth(150);

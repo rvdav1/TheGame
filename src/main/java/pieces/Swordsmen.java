@@ -1,8 +1,17 @@
 package pieces;
 import engine.*;
 
+/**
+ * A Swordsmen egység osztálya.
+ */
 public class Swordsmen extends CombatUnit{
 
+	/**
+	 * A Swordsmen egység konstruktora.
+	 * 
+	 * @param team az egység csapata
+	 * @param unitZone az egység jelenlegi zónája
+	 */
 	public Swordsmen(boolean team, GameZone unitZone) {
 		super(team, unitZone);
 		this.setHealth(150);

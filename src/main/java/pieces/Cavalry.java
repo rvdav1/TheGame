@@ -1,8 +1,17 @@
 package pieces;
 import engine.*;
 
+/**
+ * A Cavalry egység adatai.
+ */
 public class Cavalry extends CombatUnit{
 	
+	/**
+	 * A Cavalry egység konstruktora.
+	 * 
+	 * @param team az egység csapata
+	 * @param unitZone az egység jelenlegi zónája
+	 */
 	public Cavalry(boolean team, GameZone unitZone) {
 		super(team, unitZone);
 		this.setHealth(100);

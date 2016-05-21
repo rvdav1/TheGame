@@ -17,14 +17,23 @@ public class TestEngine {
 	@Test
 	public void testZone(){
 		GameZone zone = new GameZone(4,5,true);
+		GameZone zone2 = new GameZone(0,0);
+		zone2.setX(1);
+		zone2.setY(1);
 		
-		assertEquals(4, zone.getX(),0);
-		assertEquals(5, zone.getY(),0);
+		assertEquals(1,zone2.getX());
+		assertEquals(1,zone2.getY());
+		assertEquals(4, zone.getX());
+		assertEquals(5, zone.getY());
 		assertEquals(true, zone.isAvailable());
 	}
 	
 	@Test
 	public void testBoard(){
+		assertEquals(10,board.getBoardSize(),0);
+		assertEquals(board.getZones()[4][4],board.getZone(4, 4));
+		board.setBoardSize(10);
+		board.setZones(board.getZones());
 		assertEquals(10,board.getBoardSize(),0);
 		assertEquals(board.getZones()[4][4],board.getZone(4, 4));
 	}
@@ -40,16 +49,27 @@ public class TestEngine {
 		assertEquals(true,unit.isTeam());
 		unit.moveUnit(zone2);
 		assertEquals(zone2,unit.getUnitZone());
+		unit.setTeam(false);
+		assertEquals(false,unit.isTeam());
+		unit.moveUnit(zone1);
+		assertEquals(zone1,unit.getUnitZone());
 	}
 	
 	@Test
 	public void testCombatUnit(){
 		CombatUnit unit1 = new Cavalry(true,board.getZone(0, 0));
 		CombatUnit unit2 = new Guard(false,board.getZone(0, 1));
-
+		
+		assertEquals(100,unit1.getHealth());
 		assertEquals(true,unit2.isAlive());
 		unit1.attackTarget(unit2);
 		assertEquals(false,unit2.isAlive());
+		assertEquals(5,unit1.getAtk());
+		assertEquals(1,unit1.getDef());
+		assertEquals(3,unit1.getMoral());
+		assertEquals(14,unit1.getActualAtk());
+		assertEquals(7,unit1.getActualDef());
+		assertEquals("Cavalry",unit1.getUnitName());
 	}
 	
 	@Test
@@ -57,6 +77,7 @@ public class TestEngine {
 		game.initGame(firstTeam, firstTeam);
 		assertEquals(true,game.isFirstPlayer());
 		assertEquals(6,game.getFirstAlive());
+		Board board2 = game.getBoard();
 		
 		game.getFirstTeam()[5].setAlive(false);
 		assertEquals(5,game.getFirstAlive());
@@ -79,6 +100,14 @@ public class TestEngine {
 		for (int i = 0; i < 6; i++)
 			game.getFirstTeam()[i].setAlive(false);
 		assertEquals(false,game.firstWon());
+		
+		game.setFirstPlayer(false);
+		game.setBoard(game.getBoard());
+		game.setFirstTeam(game.getSecondTeam());
+		game.setSecondTeam(game.getFirstTeam());
+		assertEquals(false,game.isFirstPlayer());
+		assertEquals(game.getFirstTeam()[0],game.getSecondTeam()[0]);
+		assertEquals(board2,game.getBoard());
 	}
 	
 	@Test

@@ -1,6 +1,8 @@
 package gui;
 
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -26,11 +28,14 @@ public class Main extends Application {
 				.getName();
 	}
 	
+	public final static Logger logger = Logger.getLogger(Main.class.getName());
+	
 	@Override
 	public void start(Stage stage) {
 		firstTeam = ReadInXML.readXML(getClass().getResourceAsStream("/profiles/.xml"));
 		secondTeam = ReadInXML.readXML(getClass().getResourceAsStream("/profiles/.xml"));
 		location = getClass().getProtectionDomain().getCodeSource().getLocation().toString();
+		Main.logger.log(Level.INFO, WriteInXML.getFolder());
 		WriteInXML.setDep();
 		try {
 	        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Main.fxml"));

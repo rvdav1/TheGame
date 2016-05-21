@@ -1,6 +1,7 @@
 /home/enjoy/workspace0/1Game/src/main/java/engine/CombatUnit.java
 /home/enjoy/workspace0/1Game/src/main/java/pieces/Swordsmen.java
 /home/enjoy/workspace0/1Game/src/main/java/pieces/Guard.java
+/home/enjoy/workspace0/1Game/src/main/java/persistence/package-info.java
 /home/enjoy/workspace0/1Game/src/main/java/gui/DeleteProfileController.java
 /home/enjoy/workspace0/1Game/src/main/java/pieces/Spearman.java
 /home/enjoy/workspace0/1Game/src/main/java/pieces/Cavalry.java
@@ -8,8 +9,10 @@
 /home/enjoy/workspace0/1Game/src/main/java/pieces/Raiders.java
 /home/enjoy/workspace0/1Game/src/main/java/engine/Game.java
 /home/enjoy/workspace0/1Game/src/main/java/pieces/Paladin.java
+/home/enjoy/workspace0/1Game/src/main/java/engine/package-info.java
 /home/enjoy/workspace0/1Game/src/main/java/gui/PlayController.java
 /home/enjoy/workspace0/1Game/src/main/java/engine/GameZone.java
+/home/enjoy/workspace0/1Game/src/main/java/pieces/package-info.java
 /home/enjoy/workspace0/1Game/src/main/java/gui/FXGameEngine.java
 /home/enjoy/workspace0/1Game/src/main/java/gui/AddProfileController.java
 /home/enjoy/workspace0/1Game/src/main/java/gui/EndController.java
@@ -20,6 +23,7 @@
 /home/enjoy/workspace0/1Game/src/main/java/gui/MainController.java
 /home/enjoy/workspace0/1Game/src/main/java/pieces/Militia.java
 /home/enjoy/workspace0/1Game/src/main/java/gui/OptController.java
+/home/enjoy/workspace0/1Game/src/main/java/gui/package-info.java
 /home/enjoy/workspace0/1Game/src/main/java/engine/Board.java
 /home/enjoy/workspace0/1Game/src/main/java/persistence/WriteInXML.java
 /home/enjoy/workspace0/1Game/src/main/java/pieces/Lancers.java

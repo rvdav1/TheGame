@@ -1,8 +1,17 @@
 package pieces;
 import engine.*;
 
+/**
+ * A Cavalry egység osztálya.
+ */
 public class Guard extends CombatUnit{
-
+	
+	/**
+	 * A Guard egység konstruktora.
+	 * 
+	 * @param team az egység csapata
+	 * @param unitZone az egység jelenlegi zónája
+	 */
 	public Guard(boolean team, GameZone unitZone) {
 		super(team, unitZone);
 		this.setHealth(120);

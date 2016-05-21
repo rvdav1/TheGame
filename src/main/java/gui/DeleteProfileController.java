@@ -24,23 +24,24 @@ import javafx.stage.Window;
 import persistence.WriteInXML;
 
 public class DeleteProfileController implements Initializable {
+
 	List<File> files;
 	
 	@FXML
 	Button deleteProfileButton;
-	
+
 	@FXML
 	Button deleteAllButton;
-	
+
 	@FXML
 	Button backDel;
 	
 	@FXML
 	ComboBox<File> deleteBox;
-	
+
 	@FXML
 	Label labelDel;
-	
+
 	@FXML
 	void handleDeleteProfile(ActionEvent event) throws IOException {
 		if (files.size() > 0){

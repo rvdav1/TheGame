@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -59,6 +60,9 @@ public class OptController implements Initializable {
 		if (files.size() > 0){
 			labelOpt.setText("First team profile set!");
 			Main.firstTeam = ReadInXML.readXML(firstProf);
+			Main.logger.log(Level.INFO, Main.firstTeam.get(0) + " " + Main.firstTeam.get(1) + " " + 
+					Main.firstTeam.get(2) + " " + Main.firstTeam.get(3) + " " + 
+					Main.firstTeam.get(4) + " " + Main.firstTeam.get(5));
 		} else
 			labelOpt.setText("Nothing to set!");
 	}
@@ -69,6 +73,9 @@ public class OptController implements Initializable {
 		if (files.size() > 0){
 			labelOpt.setText("Second team profile set!");
 			Main.secondTeam = ReadInXML.readXML(secondProf);
+			Main.logger.log(Level.INFO, Main.secondTeam.get(0) + " " + Main.secondTeam.get(1) + " " + 
+					Main.secondTeam.get(2) + " " + Main.secondTeam.get(3) + " " + 
+					Main.secondTeam.get(4) + " " + Main.secondTeam.get(5));
 		} else
 			labelOpt.setText("Nothing to set!");
 	}
