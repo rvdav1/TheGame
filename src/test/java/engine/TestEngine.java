@@ -12,7 +12,8 @@ import pieces.*;
 public class TestEngine {
 	Board board = new Board();
 	Game game = new Game();
-	List<String> firstTeam = Arrays.asList("Peasant","Peasant","Peasant","Peasant","Peasant","Peasant");
+	List<String> firstTeam = Arrays.asList("Cavalry","Guard","Infantry","Lancers","Militia","Peasant");
+	List<String> secondTeam = Arrays.asList("Paladin","Raiders","Spearman","Swordsmen","Militia","Peasant");
 
 	@Test
 	public void testZone(){
@@ -74,7 +75,7 @@ public class TestEngine {
 	
 	@Test
 	public void testGame(){
-		game.initGame(firstTeam, firstTeam);
+		game.initGame(firstTeam, secondTeam);
 		assertEquals(true,game.isFirstPlayer());
 		assertEquals(6,game.getFirstAlive());
 		Board board2 = game.getBoard();
@@ -108,6 +109,14 @@ public class TestEngine {
 		assertEquals(false,game.isFirstPlayer());
 		assertEquals(game.getFirstTeam()[0],game.getSecondTeam()[0]);
 		assertEquals(board2,game.getBoard());
+		
+		Game game2 = new Game();
+		game2.initGame(secondTeam, firstTeam);
+		game2.letsPlay(0, 2, 1, 2);
+		game2.letsPlay(9, 2, 8, 2);
+		assertEquals(1,game2.getFirstTeam()[0].getUnitZone().getX());
+		assertEquals(8,game2.getSecondTeam()[0].getUnitZone().getX());
+
 	}
 	
 	@Test
@@ -117,6 +126,21 @@ public class TestEngine {
 		CombatUnit unit3 = new Peasant(false,board.getZone(5, 5));
 		CombatUnit unit4 = new Peasant(true,board.getZone(5, 5));
 		CombatUnit unit5 = new Peasant(false,board.getZone(4, 4));
+		CombatUnit unit11 = new Cavalry(false,board.getZone(0, 0));
+		CombatUnit unit12 = new Guard(false,board.getZone(1, 0));
+		CombatUnit unit13 = new Infantry(false,board.getZone(2, 0));
+		CombatUnit unit14 = new Lancers(false,board.getZone(3, 0));
+		CombatUnit unit15 = new Militia(false,board.getZone(4, 0));
+		CombatUnit unit16 = new Paladin(false,board.getZone(5, 0));
+		CombatUnit unit17 = new Raiders(false,board.getZone(6, 0));
+		CombatUnit unit18 = new Spearman(false,board.getZone(7, 0));
+		CombatUnit unit19 = new Swordsmen(false,board.getZone(8, 0));
+
+		assertEquals(false,GameUtility.sameUnit(unit11, unit12));
+		assertEquals(false,GameUtility.sameUnit(unit13, unit14));
+		assertEquals(false,GameUtility.sameUnit(unit15, unit16));
+		assertEquals(false,GameUtility.sameUnit(unit17, unit18));
+		assertEquals(true,GameUtility.sameUnit(unit19, unit19));
 		
 		game.initGame(firstTeam, firstTeam);
 		
