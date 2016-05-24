@@ -9,8 +9,8 @@
 	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
   <description>
-  A projekt egy kisebb jatekot valosit meg,
-  melyet egy vagy ketto szemely hasznalhat egyszerre.
+  A projekt egy kisebb játékot valósít meg,
+  melyet egy vagy kettő személy használhat egyszerre.
   </description>
   <developers>
   	<developer>
@@ -122,15 +122,13 @@
                 <requireJavaVersion>
                   <version>1.8.0</version>
                 </requireJavaVersion>
+                <requireMavenVersion>
+                  <version>(3.0.0,)</version>
+                </requireMavenVersion>
               </rules>    
             </configuration>
           </execution>
         </executions>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.10.3</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -140,8 +138,13 @@
   </plugins>
 </build>
 <reporting>
-	<plugins>
-	  <plugin>
+  <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.10.3</version>
+      </plugin>
+      <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>cobertura-maven-plugin</artifactId>
         <version>2.7</version>
